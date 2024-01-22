@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockeys</title>
+    <!-- Daisy ui Link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+    <!-- Tailwind config file -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+
+
+    <!-- CSS styles -->
+
+    <style>
+      .btn-p{
+        border-radius: 8px;
+        background: #FF4240;
+      }
+      .man{
+        font-family: 'Manrope', sans-serif;
+      }
+
+    </style>
+    
+</head>
+
+
+<body class="man p-0 m-0 box-border">
+
+    <!-- Header starts -->
+
+    <header>
+
+      <!-- Navbar section -->
+      <nav class="max-w-[1300px] lg:mx-auto lg:px-8 px-3 pt-7">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              </div>
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a class="text-base font-bold text-[#FF4240] ">Home</a></li>
+                <li><a class="text-base font-normal text-[#424247]">About</a></li>
+                <li><a class="text-base font-normal text-[#424247]" >Pages</a></li>
+                <li><a class="text-base font-normal text-[#424247]">Blog</a></li>
+                <li><a class="text-base font-normal text-[#424247]">Contact</a></li>
+              </ul>
+            </div>
+            <a class=" lg:text-4xl text-xl font-extrabold text-[#131318]">Hockey<span class="text-[#FF4240]">’</span>s</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a class="text-base font-bold text-[#FF4240] ">Home</a></li>
+              <li><a class="text-base font-normal text-[#424247]">About</a></li>
+              <li><a class="text-base font-normal text-[#424247]" >Pages</a></li>
+              <li><a class="text-base font-normal text-[#424247]">Blog</a></li>
+              <li><a class="text-base font-normal text-[#424247]">Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end lg:space-x-4">
+            <i class="fa-solid fa-magnifying-glass text-[#949393] text-xl hidden lg:flex "></i>
+            <a class="btn btn-p text-white font-bold lg:text-xl text-[15px] outline-none border-none">Get Ticket</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Banner section starts -->
+
+      <section class="max-w-[1300px] lg:mx-auto px-8 mt-24 space-y-10">
+<!-- Caurosel div -->
+        <div>
+
+          <div class="carousel w-full rounded-xl  ">
+            <div id="slide1" class="carousel-item relative w-full bg-[url(./Images/1.png)] flex justify-center items-center bg-cover bg-center  ">
+
+              <div class="absolute flex justify-between transform -translate-y-1/2 md:left-5 md:right-5 left-24 right-24 top-[85%] lg:top-1/2">
+               
+                <a href="#slide4" class="btn btn-circle bg-black text-white">❮</a> 
+                <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full bg-[url(./Images/1.png)] flex justify-center items-center bg-cover bg-center ">
+               
+              <div class="absolute flex justify-between transform -translate-y-1/2 md:left-5 md:right-5 left-24 right-24 top-[85%] md:top-1/2">
+                <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a> 
+                <a href="#slide3" class="btn btn-circle bg-black text-white">❯</a>
+              </div>
+            </div> 
+
+            <div id="slide3" class="carousel-item relative w-full md:h-screen h-[40vh] bg-[url(./Images/1.png)] flex justify-center items-center bg-cover bg-center ">
+
+               
+              <div class="absolute flex justify-between transform -translate-y-1/2 md:left-5 md:right-5 left-24 right-24 top-[85%] md:top-1/2">
+                <a href="#slide2" class="btn btn-circle bg-black text-white">❮</a> 
+                <a href="#slide1" class="btn btn-circle bg-black text-white">❯</a>
+              </div>
+            </div> 
+           
+          </div>
+
+          <!-- Card div -->
+
+          <div class="bg-black lg:w-1/2 rounded-2xl md:p-7 p-3 md:space-y-4 lg:float-right lg:relative lg:-top-64 lg:right-7 mt-4 space-y-2">
+            <h2 class="text-white font-extrabold md:text-2xl text-lg">Meet all the heroes from the field</h2>
+            <p class="text-[#ffffff99] font-medium md:text-base text-sm">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+          </div>
+
+
+        </div>
+
+      </section>
+    
+    </header>
+
+    <!-- Main section starts -->
+    <main class="max-w-[1300px] lg:mx-auto px-8 mt-24 space-y-10">
+
+      <!-- Professional Hockey section -->
+      <section class="mt-24 space-y-10">
+       <div class="flex justify-center w-full text-center border-b-2 border-t-2 border-dashed lg:p-10 p-4">
+        <div class="space-y-5">
+          <h1 class=" text-xl md:text-4xl font-extrabold text-[#131318]">Professional Hockeys Club</h1>
+          <p class="md:text-base text-sm font-medium text-[#13131899] lg:w-3/4 mx-auto">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+
+        </div>
+       </div>
+
+       <!-- Progress div -->
+       <div class="grid grid-cols-1 lg:grid-cols-4 gap-5">
+        <!-- progress 1 -->
+             <div class="p-5 space-y-5">
+      
+             <div class="flex justify-center">
+              <div class="radial-progress text-error" style="--value:87; --size:12rem; --thickness: 2rem;" role="progressbar"><span class="text-[#131318] text-3xl font-extrabold">87%</span></div>
+             
+             </div>
+             <div class="text-center space-y-4">
+              <h3 class="text-xl font-semibold text-[#131318] ">Prayer Facility</h3>
+              <p class="text-base font-normal text-[#13131899]">Amet consectetur. Condimentum dignissim adipiscing .</p>
+             </div>
+             </div>
+        <!-- progress 2 -->
+             <div class="p-5 space-y-5">
+      
+             <div class="flex justify-center">
+              <div class="radial-progress text-success" style="--value:95; --size:12rem; --thickness: 2rem;" role="progressbar"><span class="text-[#131318] text-3xl font-extrabold">95%</span></div>
+             
+             </div>
+             <div class="text-center space-y-4">
+              <h3 class="text-xl font-semibold text-[#131318] ">Experienced Coach</h3>
+              <p class="text-base font-normal text-[#13131899]">Amet consectetur. Condimentum dignissim adipiscing .</p>
+             </div>
+             </div>
+        <!-- progress 3 -->
+             <div class="p-5 space-y-5">
+      
+             <div class="flex justify-center">
+              <div class="radial-progress text-warning" style="--value:90; --size:12rem; --thickness: 2rem;" role="progressbar"><span class="text-[#131318] text-3xl font-extrabold">90%</span></div>
+             
+             </div>
+             <div class="text-center space-y-4">
+              <h3 class="text-xl font-semibold text-[#131318] ">Senior Player</h3>
+              <p class="text-base font-normal text-[#13131899]">Amet consectetur. Condimentum dignissim adipiscing .</p>
+             </div>
+             </div>
+        <!-- progress 4 -->
+             <div class="p-5 space-y-5">
+      
+             <div class="flex justify-center">
+              <div class="radial-progress text-info" style="--value:80; --size:12rem; --thickness: 2rem;" role="progressbar"><span class="text-[#131318] text-3xl font-extrabold">80%</span></div>
+             
+             </div>
+             <div class="text-center space-y-4">
+              <h3 class="text-xl font-semibold text-[#131318] ">Training Ground</h3>
+              <p class="text-base font-normal text-[#13131899]">Amet consectetur. Condimentum dignissim adipiscing .</p>
+             </div>
+             </div>
+
+
+       </div>
+      </section>
+      <!-- Program sections -->
+      <section class="mt-24 space-y-10">
+        <div class="flex justify-center w-full text-center border-b-2 border-t-2 border-dashed lg:p-10 p-4">
+          <div class="space-y-5">
+            <h1 class=" text-xl md:text-4xl font-extrabold text-[#131318]">Program Sections</h1>
+            <p class="md:text-base text-sm font-medium text-[#13131899] lg:w-3/4 mx-auto">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+  
+          </div>
+         </div>
+
+         <!-- Image card section -->
+         <div class="h-screen grid grid-cols-1 lg:grid-cols-6 gap-5">
+
+          <!-- div1 -->
+          <div class="bg-[linear-gradient(360deg,rgba(0,0,0,0.74),rgba(0,0,0,0.4)),url(./Images/2.png)] rounded-2xl bg-no-repeat lg:col-span-3 lg:p-8 p-3 flex items-center bg-cover bg-center">
+           <div class="lg:space-y-5 space-y-4">
+            <h2 class="text-white font-extrabold lg:text-3xl text-xl ">Junior Program</h2>
+            <p class="text-white lg:text-base text-sm font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+              enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+
+          <button class="btn-p text-white px-5 py-3 text-base font-bold">Register Now!</button>
+           </div>
+
+          </div>
+          <!-- div2 -->
+          <div class="bg-[linear-gradient(360deg,rgba(0,0,0,0.74),rgba(0,0,0,0.4)),url(./Images/3.png)] bg-no-repeat lg:col-span-3 lg:p-8 p-3 flex items-center bg-cover bg-center lg:h-[50vh]  rounded-2xl ">
+           <div class="lg:space-y-5 space-y-4">
+            <h2 class="text-white font-extrabold lg:text-3xl text-xl ">Teenager Program</h2>
+            <p class="text-white lg:text-base text-sm font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+              enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+
+          <button class="btn-p text-white px-5 py-3 text-base font-bold">Register Now!</button>
+           </div>
+
+          </div>
+          <!-- div3 -->
+          <div class="bg-[linear-gradient(360deg,rgba(0,0,0,0.74),rgba(0,0,0,0.4)),url(./Images/4.png)]  bg-no-repeat lg:col-span-6 lg:p-8 p-4 flex justify-start items-end bg-cover bg-center rounded-2xl lg:h-[80vh] ">
+           <div class="lg:space-y-5 space-y-4">
+            <h2 class="text-white font-extrabold lg:text-3xl text-xl ">Professional Program</h2>
+            <p class="text-white lg:text-base text-sm font-medium  lg:w-1/2">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+              enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+
+          <button class="btn-p text-white px-5 py-3 text-base font-bold">Register Now!</button>
+           </div>
+
+          </div>
+
+         </div>
+
+      </section>
+
+      <section class=" space-y-10  transform lg:translate-y-80 pt-16">
+
+        <div class="flex justify-center w-full text-center border-b-2 border-t-2 border-dashed lg:p-10 p-4">
+          <div class="space-y-6">
+            <h1 class=" text-xl md:text-4xl font-extrabold text-[#131318]">Our New Products</h1>
+            <p class="md:text-base text-sm font-medium text-[#13131899] lg:w-3/4 mx-auto">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+  
+          </div>
+         </div>
+
+         <!-- Card div -->
+         <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-8 gap-5">
+         <!-- card1 -->
+         <div class="flex p-5 flex-col lg:flex-row justify-between items-center border-2 rounded-2xl gap-5">
+          <!-- image -->
+          <div class="w-full lg:w-auto">
+            <img src="./Images/5.png" alt="" class="w-full lg:w-auto">
+
+          </div>
+          <!-- description -->
+          <div class="space-y-4 w-full lg:w-auto">
+            <div class="flex justify-start space-x-6">
+             <span  class="font-normal text-base text-[#13131899] flex justify-center  items-center  "><img src="./Images/Frame (2).png" alt=""><span class="ml-2"> 5.0</span></span>
+              <span class="font-normal text-base text-[#13131899]  flex justify-center  items-center"><img src="./Images/Frame.png" alt=""> <span class="ml-2"> 20</span></span>
+              <span class="font-normal text-base text-[#13131899]  flex justify-center items-center"><img src="./Images/Frame (1).png" alt=""> <span class="ml-2"> 200</span></span>
+            </div>
+            <div class="space-y-2">
+              <h3 class="text-xl font-extrabold text-[#131318] ">World Cup Flags Football</h3>
+              <p class="text-base font-medium text-[#13131899]">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+              
+            </div>
+            <div class="flex justify-between flex-col lg:flex-row">
+              <p class="text-lg font-extrabold text-[#FF4240]">Price - $22.00</p>
+              <div class="flex justify-start lg:justify-center items-center space-x-3  ">
+                <i class="fa-solid fa-cart-shopping text-[#13131899] text-lg"></i>
+                <p class="text-base font-medium text-[#13131899]">Delivery Fee : Free</p>
+              </div>
+            </div>
+            
+          </div>
+         </div>
+
+
+         <!-- card2 -->
+         <div class="flex p-5 flex-col lg:flex-row justify-between items-center border-2 rounded-2xl gap-5">
+          <!-- image -->
+          <div class="w-full lg:w-auto">
+            <img src="./Images/6.png" alt="" class="w-full lg:w-auto">
+
+          </div>
+          <!-- description -->
+          <div class="space-y-4 w-full lg:w-auto">
+            <div class="flex justify-start space-x-6">
+             <span  class="font-normal text-base text-[#13131899] flex justify-center  items-center  "><img src="./Images/Frame (2).png" alt=""><span class="ml-2"> 5.0</span></span>
+              <span class="font-normal text-base text-[#13131899]  flex justify-center  items-center"><img src="./Images/Frame.png" alt=""> <span class="ml-2"> 20</span></span>
+              <span class="font-normal text-base text-[#13131899]  flex justify-center items-center"><img src="./Images/Frame (1).png" alt=""> <span class="ml-2"> 200</span></span>
+            </div>
+            <div class="space-y-2">
+              <h3 class="text-xl font-extrabold text-[#131318] ">World Cup Flags Football</h3>
+              <p class="text-base font-medium text-[#13131899]">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+              
+            </div>
+            <div class="flex justify-between flex-col lg:flex-row">
+              <p class="text-lg font-extrabold text-[#FF4240]">Price - $22.00</p>
+              <div class="flex justify-start lg:justify-center items-center space-x-3">
+                <i class="fa-solid fa-cart-shopping text-[#13131899] text-lg"></i>
+                <p class="text-base font-medium text-[#13131899]">Delivery Fee : Free</p>
+
+              </div>
+            </div>
+            
+          </div>
+         </div>
+
+
+         <!-- card3 -->
+         <div class="flex p-5 flex-col lg:flex-row justify-between items-center border-2 rounded-2xl gap-5">
+          <!-- image -->
+          <div class="w-full lg:w-auto">
+            <img src="./Images/7.png" alt="" class="w-full lg:w-auto">
+
+          </div>
+          <!-- description -->
+          <div class="space-y-4 w-full lg:w-auto">
+            <div class="flex justify-start space-x-6">
+             <span  class="font-normal text-base text-[#13131899] flex justify-center  items-center  "><img src="./Images/Frame (2).png" alt=""><span class="ml-2"> 5.0</span></span>
+              <span class="font-normal text-base text-[#13131899]  flex justify-center  items-center"><img src="./Images/Frame.png" alt=""> <span class="ml-2"> 20</span></span>
+              <span class="font-normal text-base text-[#13131899]  flex justify-center items-center"><img src="./Images/Frame (1).png" alt=""> <span class="ml-2"> 200</span></span>
+            </div>
+            <div class="space-y-2">
+              <h3 class="text-xl font-extrabold text-[#131318] ">World Cup Flags Football</h3>
+              <p class="text-base font-medium text-[#13131899]">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+              
+            </div>
+            <div class="flex justify-between flex-col lg:flex-row">
+              <p class="text-lg font-extrabold text-[#FF4240]">Price - $22.00</p>
+              <div class="flex justify-start lg:justify-center items-center space-x-3">
+                <i class="fa-solid fa-cart-shopping text-[#13131899] text-lg"></i>
+                <p class="text-base font-medium text-[#13131899]">Delivery Fee : Free</p>
+
+              </div>
+            </div>
+            
+          </div>
+         </div>
+
+
+         <!-- card4 -->
+         <div class="flex p-5 flex-col lg:flex-row justify-between items-center border-2 rounded-2xl gap-5">
+          <!-- image -->
+          <div class="w-full lg:w-auto">
+            <img src="./Images/8.png" alt="" class="w-full lg:w-auto">
+
+          </div>
+          <!-- description -->
+          <div class="space-y-4 w-full lg:w-auto">
+            <div class="flex justify-start space-x-6">
+             <span  class="font-normal text-base text-[#13131899] flex justify-center  items-center  "><img src="./Images/Frame (2).png" alt=""><span class="ml-2"> 5.0</span></span>
+              <span class="font-normal text-base text-[#13131899]  flex justify-center  items-center"><img src="./Images/Frame.png" alt=""> <span class="ml-2"> 20</span></span>
+              <span class="font-normal text-base text-[#13131899]  flex justify-center items-center"><img src="./Images/Frame (1).png" alt=""> <span class="ml-2"> 200</span></span>
+            </div>
+            <div class="space-y-2">
+              <h3 class="text-xl font-extrabold text-[#131318] ">World Cup Flags Football</h3>
+              <p class="text-base font-medium text-[#13131899]">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+              
+            </div>
+            <div class="flex justify-between flex-col lg:flex-row">
+              <p class="text-lg font-extrabold text-[#FF4240]">Price - $22.00</p>
+              <div class="flex justify-start lg:justify-center items-center space-x-3">
+                <i class="fa-solid fa-cart-shopping text-[#13131899] text-lg"></i>
+                <p class="text-base font-medium text-[#13131899]">Delivery Fee : Free</p>
+
+              </div>
+            </div>
+            
+          </div>
+         </div>
+
+
+         <!-- card5 -->
+         <div class="flex p-5 flex-col lg:flex-row justify-between items-center border-2 rounded-2xl gap-5">
+          <!-- image -->
+          <div class="w-full lg:w-auto">
+            <img src="./Images/9.png" alt="" class="w-full lg:w-auto">
+
+          </div>
+          <!-- description -->
+          <div class="space-y-4 w-full lg:w-auto">
+            <div class="flex justify-start space-x-6">
+             <span  class="font-normal text-base text-[#13131899] flex justify-center  items-center  "><img src="./Images/Frame (2).png" alt=""><span class="ml-2"> 5.0</span></span>
+              <span class="font-normal text-base text-[#13131899]  flex justify-center  items-center"><img src="./Images/Frame.png" alt=""> <span class="ml-2"> 20</span></span>
+              <span class="font-normal text-base text-[#13131899]  flex justify-center items-center"><img src="./Images/Frame (1).png" alt=""> <span class="ml-2"> 200</span></span>
+            </div>
+            <div class="space-y-2">
+              <h3 class="text-xl font-extrabold text-[#131318] ">World Cup Flags Football</h3>
+              <p class="text-base font-medium text-[#13131899]">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+              
+            </div>
+            <div class="flex justify-between flex-col lg:flex-row">
+              <p class="text-lg font-extrabold text-[#FF4240]">Price - $22.00</p>
+              <div class="flex justify-start lg:justify-center items-center space-x-3">
+                <i class="fa-solid fa-cart-shopping text-[#13131899] text-lg"></i>
+                <p class="text-base font-medium text-[#13131899]">Delivery Fee : Free</p>
+
+              </div>
+            </div>
+            
+          </div>
+         </div>
+
+         <!-- card6 -->
+         <div class="flex p-5 flex-col lg:flex-row justify-between items-center border-2 rounded-2xl gap-5">
+          <!-- image -->
+          <div class="w-full lg:w-auto">
+            <img src="./Images/10.png" alt="" class="w-full lg:w-auto">
+
+          </div>
+          <!-- description -->
+          <div class="space-y-4 w-full lg:w-auto">
+            <div class="flex justify-start space-x-6">
+             <span  class="font-normal text-base text-[#13131899] flex justify-center  items-center  "><img src="./Images/Frame (2).png" alt=""><span class="ml-2"> 5.0</span></span>
+              <span class="font-normal text-base text-[#13131899]  flex justify-center  items-center"><img src="./Images/Frame.png" alt=""> <span class="ml-2"> 20</span></span>
+              <span class="font-normal text-base text-[#13131899]  flex justify-center items-center"><img src="./Images/Frame (1).png" alt=""> <span class="ml-2"> 200</span></span>
+            </div>
+            <div class="space-y-2">
+              <h3 class="text-xl font-extrabold text-[#131318] ">World Cup Flags Football</h3>
+              <p class="text-base font-medium text-[#13131899]">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+              
+            </div>
+            <div class="flex justify-between flex-col lg:flex-row">
+              <p class="text-lg font-extrabold text-[#FF4240]">Price - $22.00</p>
+              <div class="flex justify-start lg:justify-center items-center space-x-3">
+                <i class="fa-solid fa-cart-shopping text-[#13131899] text-lg"></i>
+                <p class="text-base font-medium text-[#13131899]">Delivery Fee : Free</p>
+
+              </div>
+            </div>
+            
+          </div>
+         </div>
+
+
+
+
+         </div>
+
+      
+
+      </section>
+
+      <section class="space-y-20 border-sky-300 border-2 transform lg:translate-y-80">
+          <h1>kghytkyjhbn vthf</h1>
+      </section>
+
+
+      
+    </main>
+
+
+    <!-- Footer section starts -->
+
+    <footer>
+
+    </footer>
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- Ionic icons link -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>
